@@ -1,0 +1,109 @@
+
+#startmenu {
+    background-color: rgb(0, 38, 255);
+    text-align: center;
+    padding: 80px;
+    margin: 0;
+}
+nav {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+nav a {
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+}
+.menuleft {
+    float: left;
+}
+.menuright {
+    float: right;
+}
+nav a:hover {
+    background-color: darkgray;
+    color: black;
+}
+#leftside {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+#rightside {
+    flex: 70%;
+    background-color: blanchedalmond;
+}
+#container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+footer > a {
+    color: darkgray;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+table td, table th {
+    border:  1px solid;
+}
+@media(max-width: 800px) {
+    #leftside {
+        flex: 100%;
+    }
+    #rightside {
+        flex: 100%;
+    }
+    #container {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 400px) {
+    #leftside {
+        flex: 100%;
+    }
+    #rightside {
+        flex: 100%;
+    }
+    #container {
+        flex-wrap: wrap;
+    }
+}
+.imgitem {
+    flex: 33%;
+    text-align: center;
+}
+.img {
+    width: 90%;
+}
+.titleimg {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px;
+}
+.desimg {
+    padding: 0px 10px 10px 10px;
+}
+@media(max-width: 800px) {
+    .imgitem {
+        flex: 50%;
+    }
+}
+@media(max-width: 400px) {
+    .imgitem {
+        flex: 100%;
+    }
+}
+#al_container {
+    display: flex;
+    flex-wrap: wrap;
+}
